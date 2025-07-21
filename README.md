@@ -182,4 +182,4 @@ Open an issue or submit a pull request if you'd like to:
 - Use different algorithms (e.g., SVM, decision tree)
 - Export results to external systems
 
-We welcome collaboration!
+Mail me to alessiolerede@gmail.com for more information about the algorithm
