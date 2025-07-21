@@ -2,6 +2,7 @@
 # 🔍 Time Series Forecasting & Outlier Detection in Oracle SQL
 
 This repository contains a fully-automated **PL/SQL pipeline** for performing time series forecasting and outlier detection using **Oracle Data Mining (ODM)**. It is designed for execution directly within **Oracle Database** or **Oracle Cloud environments** that support the `DBMS_DATA_MINING` package.
+Documentation available here: https://docs.oracle.com/en/database/oracle/oracle-database/19/arpls/DBMS_DATA_MINING.html#GUID-7010593E-C323-4DFC-8468-D85CE41A0C3C
 
 The solution is implemented entirely in **PL/SQL**, and supports dynamic model creation, data preparation, prediction, and result aggregation — all without relying on external scripts or tools.
 
