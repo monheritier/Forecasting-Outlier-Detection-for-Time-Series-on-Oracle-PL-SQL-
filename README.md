@@ -69,7 +69,7 @@ The results are saved into a table named `forecast_outliers` with the following 
 1. **Clean** any previously existing models or temp tables (`MODEL_%`, `TEMP_%`)
 2. Create an empty output table: `forecast_outliers`
 3. For each unique `(metric, data_group)` combination:
-   - Filter data from the source table (excluding anomalous months like `01_Jan` and `07_Jul`)
+   - Filter data from the source table
    - Create a **temporary working table** with historical data
    - Insert **10 forward-looking periods** (with missing values)
    - Train a **neural network regression model**
