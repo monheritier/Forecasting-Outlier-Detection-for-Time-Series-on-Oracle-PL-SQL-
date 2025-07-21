@@ -91,6 +91,48 @@ The results are saved into a table named `forecast_outliers` with the following 
   - Threshold logic for flagging outliers (`z_score < 1` is considered normal)
 
 ---
+## 📊 Model Evaluation
+
+To assess the accuracy and reliability of the forecasted values, the following metrics are recommended:
+
+### 🔹 Mean Absolute Percentage Error (MAPE)
+Indicates the average percent error between the actual and predicted values.
+
+- **Formula:**  
+  `MAPE = (1/n) * Σ ( |actual - predicted| / |actual| ) * 100`
+
+- **Interpretation:**  
+  | MAPE Range | Interpretation      |
+  |------------|---------------------|
+  | 0–10%      | Excellent accuracy  |
+  | 10–20%     | Good                |
+  | 20–50%     | Moderate            |
+  | >50%       | Poor                |
+
+### 🔹 Correlation (Pearson)
+Measures how well the predicted values follow the trend of the actual data.
+
+- **Formula:**  
+  `CORR(actual, predicted)`
+
+- **Interpretation:**
+  - `+1`: Perfect positive correlation
+  - `0`: No correlation
+  - `-1`: Perfect negative correlation
+
+### 🔹 Min/Max Normalized Error
+Normalizes the absolute error against the max of actual and predicted values.
+
+- **Formula:**  
+  `Error_i = |actual - predicted| / MAX(|actual|, |predicted|)`
+
+- **Interpretation:**
+  - Values near **0**: Excellent precision
+  - Values near **1**: Large discrepancies
+
+You can calculate these metrics in a post-processing step using SQL or Python for better performance analysis.
+
+---
 
 ## 📁 Project Structure
 
