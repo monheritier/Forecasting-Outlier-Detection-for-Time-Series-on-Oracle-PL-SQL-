@@ -139,10 +139,11 @@ You can calculate these metrics in a post-processing step using SQL or Python fo
 ```
 /oracle_timeseries_forecast/
 │
-├── forecast_outlier_plsql.sql         -- Generalized PL/SQL script
+├── anomaly_detection_final.sql         -- Generalized PL/SQL script
 ├── README.md                          -- This file
 ├── neural_settings_template.sql       -- Sample neural network config
 ├── source_timeseries_data_schema.sql  -- Sample schema for the input table
+├── forecast_metrics_evaluation.sql  -- How to evaluate the model
 ```
 
 ---
